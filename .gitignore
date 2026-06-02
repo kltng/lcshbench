@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.uv/
+
+# Large data artifacts (built, not committed unless small/curated)
+data/raw/
+data/*.db
+*.parquet
+
+# Retrieval artifacts — rebuilt from lcsh.db / vocab; released separately
+data/vocab/
+data/index/
+
+# Trained / merged model weights — large; regenerable from the Hub adapter
+# (kltng/embeddinggemma-300m-lcsh) via scripts/merge_adapter.py
+models/
+
+# Fine-tune training data — mirrored to the private HF dataset kltng/lcsh-finetune
+data/finetune/
+
+# Env / secrets
+.env
+.env.local
+*.key
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# baseline run logs
+results/runs/*.log
+
+# frequency-floor prediction dumps — large + deterministic (regenerate from dev);
+# the .score.json summaries and the leaderboard are committed instead
+results/runs/frequency_v2_*.json
+!results/runs/frequency_v2_*.score.json
+results/runs/frequency_v22_*.json
+!results/runs/frequency_v22_*.score.json
+# HF results-repo download artifact (regenerable: hf download kltng/lcsh-bench-v22-results)
+results/v22-hf*/
+
+# retrieval prediction dumps — regenerable; keep only the .score.json summaries
+results/runs/retrieval_*.json
+!results/runs/retrieval_*.score.json
+
+# pipeline run logs
+logs/
+data/chat_cache/
+
+# rerank prediction dumps — regenerable; keep only the .score.json summaries
+results/runs/rerank_*.json
+!results/runs/rerank_*.score.json
+
+# LLM-layer prediction dumps — regenerable; keep only the .score.json summaries
+results/runs/gen_*.json
+!results/runs/gen_*.score.json
+results/runs/llmrr_*.json
+!results/runs/llmrr_*.score.json
+results/runs/sel_*.json
+!results/runs/sel_*.score.json
+
+# Quarto / Typst paper build artifacts
+paper/*.html
+paper/*_files/
+paper/.quarto/
+paper/*.pdf
+
+# held-out test prediction dumps — regenerable
+results/runs/test_*.json
+
+# consensus dump — published to HF, not git
+data/*.parquet
+
+# HF release staging (regenerable via build_release_v1.py)
+data/release/

@@ -1,0 +1,8 @@
+{
+ "total": 14401,
+ "root_unreachable": 390,
+ "non_latin": 59,
+ "root_unreachable_frac": 0.027081452676897436,
+ "non_latin_frac": 0.0040969377126588435
+}
+examples: ['Tli (Georgia)--Antiquities.', 'Xigang (Tainan, Taiwan)--History.', 'Koguryŏ (Kingdom)--History, Military.', 'Sakhalin (Sakhalinskai︠a︡ oblastʹ, Russia)--History--20th century.', 'Wilson County (Tenn.)--Genealogy.', 'Kütahya (Turkey)--Intellectual life--History--Early works to 1500.', 'Asciano (Italy)--Buildings, structures, etc.', 'Racially mixed people--Haiti--Biography.', 'Racially mixed people--Race identity--Haiti.', 'Luanda (Luanda, Angola)--Pictorial works.', 'Speeches, addresses, etc.--Indexes.', 'Ṣaʻīdīs--Egypt--Music.', 'Ṣaʻīdīs--Egypt--Social life and customs.', 'Ṣaʻīdīs--Egypt--Folklore.', 'Linz (Austria)--History--Exhibitions.', 'Germantown (Philadelphia, Pa.)--History.', 'South Shore (Chicago, Ill.)', 'Ceilândia (Brazil)--Health.', 'Fatick (Senegal : Region)--Research--History.', 'Niakhar (Senegal)--Research--History.']

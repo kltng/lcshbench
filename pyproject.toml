@@ -1,0 +1,52 @@
+[project]
+name = "lcsh-benchmark"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "KL Tang", email = "15926391+kltng@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "numpy>=2.4.6",
+    "pyarrow>=24.0.0",
+    "pymarc>=5.3.1",
+]
+
+[project.optional-dependencies]
+local-embed = [
+    "einops>=0.8.2",
+    "peft>=0.19.1",
+    "sentence-transformers>=3.0.0",
+]
+
+[project.scripts]
+lcsh-benchmark = "lcsh_benchmark:main"
+lcsh-benchmark-build = "lcsh_benchmark.build:main"
+lcsh-benchmark-score = "lcsh_benchmark.score:main"
+lcsh-benchmark-leaderboard = "lcsh_benchmark.leaderboard:main"
+lcsh-benchmark-build-manifest = "lcsh_benchmark.scaleup.build_manifest:main"
+lcsh-benchmark-scaleup-run = "lcsh_benchmark.scaleup.run:main"
+lcsh-benchmark-build-v2 = "lcsh_benchmark.scaleup.build_v2:main"
+lcsh-benchmark-baseline-frequency = "lcsh_benchmark.baselines.frequency:main"
+lcsh-benchmark-subset = "lcsh_benchmark.baselines.subset:main"
+lcsh-benchmark-vocab = "lcsh_benchmark.retrieval.vocab:main"
+lcsh-benchmark-stats = "lcsh_benchmark.scaleup.stats:main"
+lcsh-benchmark-embed-index = "lcsh_benchmark.retrieval.embed_index:main"
+lcsh-benchmark-retrieve = "lcsh_benchmark.retrieval.retrieve:main"
+lcsh-benchmark-score-retrieval = "lcsh_benchmark.retrieval.score_retrieval:main"
+lcsh-benchmark-rerank = "lcsh_benchmark.retrieval.rerank:main"
+lcsh-benchmark-generate = "lcsh_benchmark.generation.generate:main"
+lcsh-benchmark-llm-rerank = "lcsh_benchmark.retrieval.llm_rerank:main"
+lcsh-benchmark-select = "lcsh_benchmark.retrieval.select:main"
+lcsh-benchmark-ci = "lcsh_benchmark.ci:main"
+lcsh-benchmark-audit-leakage = "lcsh_benchmark.audit_leakage:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
