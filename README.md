@@ -12,7 +12,7 @@ is admitted only when at least two *independent* cataloging agencies assigned
 LCSH to it.
 
 - 📄 **Paper:** forthcoming (preprint link TBD)
-- 📊 **Data:** [`kltng/lcshbench`](https://huggingface.co/datasets/kltng/lcshbench) on the Hugging Face Hub *(private during pre-release; public at release)*
+- 📊 **Data:** [`kltng/lcshbench`](https://huggingface.co/datasets/kltng/lcshbench) on the Hugging Face Hub
 - 🏆 **Results:** [`results/leaderboard-v1.0.md`](results/leaderboard-v1.0.md)
 
 ## Why consensus
